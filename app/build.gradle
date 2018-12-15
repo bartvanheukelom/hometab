@@ -22,11 +22,25 @@ android {
     }
 }
 
+//repositories {
+//    ivy {
+//        url 'https://github.com/'
+//        layout 'pattern', {
+//            artifact '/[organisation]/blob/[revision]/JavaDesktopApp/libs/[module].jar'
+//        }
+//    }
+//}
+
 dependencies {
+
+//    def huever = "846443f1fe0928927f860ca2c375ba75723872c0"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//    implementation "PhilipsHueSDK-Java-MultiPlatform-Android:huelocalsdk:$huever"
+//    implementation "PhilipsHueSDK-Java-MultiPlatform-Android:huesdkresources:$huever"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
